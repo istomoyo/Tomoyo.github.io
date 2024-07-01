@@ -4,7 +4,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
     <link rel="icon" href="https://avatars.githubusercontent.com/u/143997290?s=400&u=5fa426980366204653ac077cad59fa3485568e19&v=4"><script>
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
@@ -86,8 +86,10 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p><a target="_blank" rel="noopener noreferrer nofollow" href="https://private-user-images.githubusercontent.com/143997290/341279791-8a297207-0039-4394-9ed6-ab902887e234.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4NjMxMzEsIm5iZiI6MTcxODg2MjgzMSwicGF0aCI6Ii8xNDM5OTcyOTAvMzQxMjc5NzkxLThhMjk3MjA3LTAwMzktNDM5NC05ZWQ2LWFiOTAyODg3ZTIzNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyMFQwNTUzNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MWJjNDFmNDQ2YzM3NzNiMDY1MmEwZDU0ZGNlM2IzMjM4YTZhNTI2OGJiYjhjMDc5MTczM2FjNmFjNjkwMWFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ANbM0fe5eymV5E405IbnNppMkCMZ8k-wFEL1GG7ENag"><img src="https://private-user-images.githubusercontent.com/143997290/341279791-8a297207-0039-4394-9ed6-ab902887e234.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTg4NjMxMzEsIm5iZiI6MTcxODg2MjgzMSwicGF0aCI6Ii8xNDM5OTcyOTAvMzQxMjc5NzkxLThhMjk3MjA3LTAwMzktNDM5NC05ZWQ2LWFiOTAyODg3ZTIzNC5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNjIwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDYyMFQwNTUzNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00MWJjNDFmNDQ2YzM3NzNiMDY1MmEwZDU0ZGNlM2IzMjM4YTZhNTI2OGJiYjhjMDc5MTczM2FjNmFjNjkwMWFmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.ANbM0fe5eymV5E405IbnNppMkCMZ8k-wFEL1GG7ENag" alt="" style="max-width: 100%;"></a> 在这我发现了，他好像对图像支持不太好？</p>
 </blockquote></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
+
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
 <div class="comments" id="comments"></div>
+
 </div>
     <div id="footer">Copyright © <span id="year"></span><a href="https://istomoyo.github.io/Tomoyo.github.io"> Tomoyo </a>
 <p>
@@ -147,6 +149,8 @@ cmButton=document.getElementById("cmButton");
     span.setAttribute("class","Counter");
     span.innerHTML="2";
     cmButton.appendChild(span);
+
+
 function openComments(){
     cm=document.getElementById("comments");
     cmButton=document.getElementById("cmButton");
